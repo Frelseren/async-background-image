@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Async background image</title>
+  <style type="text/css">
+    #background {
+      width: 600px;
+      height: 400px;
+      background-color: #222;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <div id="background"></div>
+  <script>
+    (function() {
+      "use strict";
+      var backgroundImage = new Image();
+      backgroundImage.src = "https://static.pexels.com/photos/2154/sky-lights-space-dark-large.jpg";
+      backgroundImage.onload = function () {
+        document.getElementById('background').style["background-image"] = "url(" + backgroundImage.src + ")";
+      }
+    })();
+  </script>
+</body>
+</html>
