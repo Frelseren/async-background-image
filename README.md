@@ -1,4 +1,4 @@
-# async-background-image
+# async-background-image code snippet
 Asynchronously load an image and use it as a background when it's ready.
 
 <ol>
